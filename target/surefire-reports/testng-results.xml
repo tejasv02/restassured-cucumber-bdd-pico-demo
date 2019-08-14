@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="RunCucumberTest" duration-ms="4096" started-at="2019-08-14T22:55:12Z" finished-at="2019-08-14T22:55:16Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:RunCucumberTest@3a03464]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Command line test" duration-ms="4096" started-at="2019-08-14T22:55:12Z" finished-at="2019-08-14T22:55:16Z">
+      <class name="RunCucumberTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:RunCucumberTest@3a03464]" name="setUpClass" is-config="true" duration-ms="292" started-at="2019-08-14T23:55:12Z" finished-at="2019-08-14T23:55:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:RunCucumberTest@3a03464]" name="feature" duration-ms="2557" started-at="2019-08-14T23:55:13Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-08-14T23:55:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Make comments on a post]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:RunCucumberTest@3a03464]" name="feature" duration-ms="670" started-at="2019-08-14T23:55:15Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-08-14T23:55:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Send posts]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:RunCucumberTest@3a03464]" name="feature" duration-ms="494" started-at="2019-08-14T23:55:16Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-08-14T23:55:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Get list of of users]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:RunCucumberTest@3a03464]" name="tearDownClass" is-config="true" duration-ms="9" started-at="2019-08-14T23:55:16Z" finished-at="2019-08-14T23:55:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- RunCucumberTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- RunCucumberTest -->
+</testng-results>

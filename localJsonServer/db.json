@@ -1,0 +1,27 @@
+{
+  "posts": [
+    {
+      "title": "aut quo modi neque nostrum ducimus",
+      "author": "my name",
+      "id": 10
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Leanne Graham",
+      "username": "Bret",
+      "email": "a@b.com"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

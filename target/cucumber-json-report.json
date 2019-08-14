@@ -1,0 +1,566 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 105422,
+              "status": "passed"
+            },
+            "match": {
+              "location": "World.before(Scenario)"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Make comments on post and check status code",
+        "description": "",
+        "id": "make-comments-on-a-post;make-comments-on-post-and-check-status-code",
+        "after": [
+          {
+            "result": {
+              "duration": 19802,
+              "status": "passed"
+            },
+            "match": {
+              "location": "World.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 427992804,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have an end point comments",
+            "match": {
+              "location": "NewCommentsStepDefinitions.iHaveAnEndPointComments()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1507814078,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I post a comment \"my comment\" on post with title \"aut quo modi neque nostrum ducimus\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "my comment",
+                  "offset": 18
+                },
+                {
+                  "val": "aut quo modi neque nostrum ducimus",
+                  "offset": 50
+                }
+              ],
+              "location": "NewCommentsStepDefinitions.iPostACommentOnPostWithTitleAndAuthor(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30395046,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the status code is 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 19
+                }
+              ],
+              "location": "ResponseStepDefinitions.verify_status_code(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 32809,
+              "status": "passed"
+            },
+            "match": {
+              "location": "World.before(Scenario)"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Make comments on post and check response shows added comment",
+        "description": "",
+        "id": "make-comments-on-a-post;make-comments-on-post-and-check-response-shows-added-comment",
+        "after": [
+          {
+            "result": {
+              "duration": 26164,
+              "status": "passed"
+            },
+            "match": {
+              "location": "World.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 282611,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I have an end point comments",
+            "match": {
+              "location": "NewCommentsStepDefinitions.iHaveAnEndPointComments()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 468530771,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I post a comment \"my comment\" on post with title \"aut quo modi neque nostrum ducimus\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "my comment",
+                  "offset": 18
+                },
+                {
+                  "val": "aut quo modi neque nostrum ducimus",
+                  "offset": 50
+                }
+              ],
+              "location": "NewCommentsStepDefinitions.iPostACommentOnPostWithTitleAndAuthor(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 61357772,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "response includes my comment \"my comment\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "my comment",
+                  "offset": 30
+                }
+              ],
+              "location": "NewCommentsStepDefinitions.responseIncludesMyComment(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Make comments on a post",
+    "description": "As a user\r\nwhen I make a comment on a post\r\nI want to see the comment added to post",
+    "id": "make-comments-on-a-post",
+    "keyword": "Feature",
+    "uri": "Comments.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 51116,
+              "status": "passed"
+            },
+            "match": {
+              "location": "World.before(Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Make posts to server and check response code",
+        "description": "",
+        "id": "send-posts;make-posts-to-server-and-check-response-code",
+        "after": [
+          {
+            "result": {
+              "duration": 14424,
+              "status": "passed"
+            },
+            "match": {
+              "location": "World.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 216379,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have an end point posts",
+            "match": {
+              "location": "NewPostStepDefinitions.iHaveAnEndPointPosts()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 326897460,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I post with title \"new book\" and author \"my name\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "new book",
+                  "offset": 19
+                },
+                {
+                  "val": "my name",
+                  "offset": 41
+                }
+              ],
+              "location": "NewPostStepDefinitions.iPostWithTitleAndAuthor(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 687193,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the status code is 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 19
+                }
+              ],
+              "location": "ResponseStepDefinitions.verify_status_code(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 47914,
+              "status": "passed"
+            },
+            "match": {
+              "location": "World.before(Scenario)"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Make posts to server and check response contains title and author",
+        "description": "",
+        "id": "send-posts;make-posts-to-server-and-check-response-contains-title-and-author",
+        "after": [
+          {
+            "result": {
+              "duration": 18875,
+              "status": "passed"
+            },
+            "match": {
+              "location": "World.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 210103,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I have an end point posts",
+            "match": {
+              "location": "NewPostStepDefinitions.iHaveAnEndPointPosts()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 308705834,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I post with title \"new book\" and author \"my name\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "new book",
+                  "offset": 19
+                },
+                {
+                  "val": "my name",
+                  "offset": 41
+                }
+              ],
+              "location": "NewPostStepDefinitions.iPostWithTitleAndAuthor(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 21370356,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "response includes the following",
+            "match": {
+              "location": "ResponseStepDefinitions.response_equals(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "title",
+                  "new book"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "author",
+                  "my name"
+                ],
+                "line": 15
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Send posts",
+    "description": "",
+    "id": "send-posts",
+    "keyword": "Feature",
+    "uri": "Posts.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 54653,
+              "status": "passed"
+            },
+            "match": {
+              "location": "World.before(Scenario)"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Call users end point and check response code",
+        "description": "",
+        "id": "get-list-of-of-users;call-users-end-point-and-check-response-code",
+        "after": [
+          {
+            "result": {
+              "duration": 16319,
+              "status": "passed"
+            },
+            "match": {
+              "location": "World.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 113866511,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have a service to request list of users",
+            "match": {
+              "location": "UsersStepDefinitions.iHaveAServiceToRequestListOfUsers()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 106954438,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I request list of users",
+            "match": {
+              "location": "UsersStepDefinitions.iRequestListOfUsers()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1003552,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 19
+                }
+              ],
+              "location": "ResponseStepDefinitions.verify_status_code(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 30745,
+              "status": "passed"
+            },
+            "match": {
+              "location": "World.before(Scenario)"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Call users end point and check first user",
+        "description": "",
+        "id": "get-list-of-of-users;call-users-end-point-and-check-first-user",
+        "after": [
+          {
+            "result": {
+              "duration": 17810,
+              "status": "passed"
+            },
+            "match": {
+              "location": "World.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 109157986,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I have a service to request list of users",
+            "match": {
+              "location": "UsersStepDefinitions.iHaveAServiceToRequestListOfUsers()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 111790632,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I request list of users",
+            "match": {
+              "location": "UsersStepDefinitions.iRequestListOfUsers()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 41341971,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "response includes username \"Bret\" and name \"Leanne Graham\" fields",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Bret",
+                  "offset": 28
+                },
+                {
+                  "val": "Leanne Graham",
+                  "offset": 44
+                }
+              ],
+              "location": "ResponseStepDefinitions.responseIncludesUsernameAndNameFields(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Get list of of users",
+    "description": "As a user\r\nwhen I request list of users\r\nI must see list of users",
+    "id": "get-list-of-of-users",
+    "keyword": "Feature",
+    "uri": "Users.feature"
+  }
+]
